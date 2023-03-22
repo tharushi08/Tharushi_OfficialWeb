@@ -180,12 +180,14 @@ body{
 }
 
 .home-img{
-    position: relative;
+    
     width: 410px;
     height: 410px;
+   
     
 }
-.home-img.glowing-circle{
+.home-img .glowing-circle{
+    
     width: 100%;
     height: 100%;
     background: yellowgreen;
@@ -194,29 +196,40 @@ body{
     justify-content: center;
     align-items: center;
 }
-.home-img.glowing-circle::after{
-content: '';
+.home-img .glowing-circle::after{
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: #0c1022;
+    border-radius: 50%;
+}
+
+.glowing-circle span {
 position: absolute;
-width: 380px;
-height: 380px;
-background: #0c1022;
+width: 27%;
+height: 51.2%;
+background: linear-gradient(#f06, #3cf);
 border-radius: 50%;
 }
 
-.glowing-circle.image{
+.glowing-circle .image{
     position: relative;
     width: 380px;
     height: 380px;
-    background:red;
+   
     border-radius: 50%;
     z-index: 1;
+    overflow: hidden;
 }
-
 
 .image img{
-    max-width: 300px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 350px;
     object-fit: cover;
 }
-
-
+ 
 
